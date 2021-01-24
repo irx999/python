@@ -10,7 +10,6 @@ xxx = requests.get(url=url,headers=headers)
 print(xxx)
 soup = bs4.BeautifulSoup(xxx.text,"html.parser")
 yyy = soup.find_all('img')
-#print(yyy)
 for zzz in yyy:
     link = zzz.get('zoomfile')
     #print(link)
